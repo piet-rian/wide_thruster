@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- ===== 要素追加対象であるxPathがあることが自明なためxPathのチェックは省略 ===== -->
+
+  <!-- 重力エンジンのリンク対象として追加 -->
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>
+      /Defs/ThingDef[defName="GravEngine"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+    <value>
+      <li>WideThruster</li>
+    </value>
+  </Operation>
+
+  <!-- 発射品質に若干寄与する -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/RitualOutcomeEffectDef[defName ="GravshipLaunch"]/comps</xpath>
+    <value>
+      <li Class="ComplementaryOdyssey.RitualOutcomeComp_GravshipFacilities">
+        <facilityQualityOffsets>
+          <li>
+            <key>WideThruster</key>
+            <value>0.05</value>
+          </li>
+        </facilityQualityOffsets>
+      </li>
+    </value>
+  </Operation>
+
+</Patch>
