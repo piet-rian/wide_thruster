@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 
-    <!-- see. https://rimworldwiki.com/wiki/Modding_Tutorials/About.xml -->
+    <packageId>piet.rian.odyssey.thruster.wide</packageId>
+    <name>Wide Thruster</name>
+    <authors>
+        <li>piet-rian</li>
+        <li>...</li>
+    </authors>
+    <description> Add ...
+        - wide thruster(2x3)
+    </description>
+    <supportedVersions>
+        <li>1.6</li>
+    </supportedVersions>
+
+    <modVersion>1.0</modVersion>
+    <url>https://github.com/piet-rian/wide_thruster</url>
+
+
+    <modDependencies>
+        <li>
+            <packageId>ludeon.rimworld.odyssey</packageId>
+            <displayName>Odyssey</displayName>
+        </li>
+    </modDependencies>
+
+    <loadAfter>
+        <li>ludeon.rimworld</li>
+        <li>ludeon.rimworld.odyssey</li>
+    </loadAfter>
 
 </ModMetaData>
